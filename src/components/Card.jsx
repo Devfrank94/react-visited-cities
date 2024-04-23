@@ -6,8 +6,13 @@ function Card({ title, imgURL, isVisited, description }) {
   // Condizione che mostra la spunta verde o la x rossa  a seconda se il luogo è stato visitato o meno.
   const visitedLabel = (
     <span>
-      {isVisited ? <CheckCircleIcon className="inline h-6 w-6 m-3 text-green-700"/> : <XCircleIcon className="inline h-6 w-6 m-3 text-red-700"/>}
-      <p className='text-white font-semibold'> {isVisited ? 'Visitata' : 'Non visitata'}</p>
+      {isVisited 
+        ? <CheckCircleIcon className="inline h-6 w-6 m-3 text-green-700"/> 
+        : <XCircleIcon className="inline h-6 w-6 m-3 text-red-700"/>
+      }
+      <p className='text-white font-semibold'> 
+        {isVisited ? 'Visitata' : 'Non visitata'}
+      </p>
     </span>
   );
 
