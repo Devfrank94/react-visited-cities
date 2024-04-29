@@ -19,9 +19,9 @@ function Card({ title, imgURL, isVisited, description }) {
   return(
       <div className="card cursor-pointer hover:scale-110 transition delay-150 duration-300 ease-in-out flex-none mx-2 w-60 h-max text-center rounded-lg bg-zinc-900 shadow-2xl">
         <img className="object-cover h-52 rounded w-full" src={imgURL} alt={title} />
-        <div className="p-4 h-64 overflow-auto">
+        <div className="p-4 h-64 overflow-scroll break-words hyphens-auto">
           <h2 className="text-2xl text-white font-bold">{title}</h2>
-          <p className="text-gray-500/75 text-wrap sm:text-balance">{description}</p>
+          <p className="text-gray-400/75">{description}</p>
           <div className="flex justify-center my-5">
             <span>{visitedLabel}</span>
           </div>
