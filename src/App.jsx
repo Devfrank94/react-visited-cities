@@ -1,15 +1,21 @@
-
+import { useState } from 'react';
 import './App.css'
 import Navbar from './components/Navbar.jsx'
 import Card from './components/Card.jsx'
+import CardForm from './components/CardForm.jsx';
 
 
 
 function App() { 
 
+
+  const addCity = (city) => {
+    setCities([...cities, city])
+  }
+
   // creo  un array di oggetti che rappresentano le città, ciascuna con i propri dati.
 
-  const cities = [
+const [cities, setCities] = useState([
   {
     id: 0,
     title: "Tokyo",
@@ -66,22 +72,28 @@ function App() {
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     isVisited: true,
   },
-];
+]);
 
   return (
     <>
     <Navbar/>
-    <div className="fm-container pt-10 h-screen bg-gradient-to-t from-gray-500 to-gray-800 flex justify-center flex-wrap min-[320px]:gap-4 sm:gap-4 md:gap-4">
+    <div className="bg-gradient-to-t from-gray-500 to-gray-800">
 
+    <CardForm addCity={addCity} />
+
+    <div className="py-10 flex justify-center flex-wrap min-[320px]:gap-5 sm:gap-5 md:gap-5">
     {cities.map((city) => (
-      <Card 
-      key={city.id}
-      title={city.title}
-      imgURL={city.imgURL}
-      description={city.description}
-      isVisited={city.isVisited}
-      />
-    ))}
+          <Card 
+          key={city.id}
+          title={city.title}
+          imgURL={city.imgURL}
+          description={city.description}
+          isVisited={city.isVisited}
+          />
+      ))}
+    </div>
+
+    
 
     </div>
 
