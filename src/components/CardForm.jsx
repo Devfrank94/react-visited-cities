@@ -22,7 +22,6 @@ function CardForm({ addCity }) {
     e.preventDefault();
     console.log(e)
 
-
     const city = {
       id:  Math.random(),
       title: formData.title,
