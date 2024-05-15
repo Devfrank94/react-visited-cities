@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 function CardForm({ addCity }) {
 
@@ -17,6 +17,11 @@ function CardForm({ addCity }) {
     setFormData({...formData, [name]: inputValue,});
   };
 
+  //Modifico in tempo reale il document title quando aggiungo una nuova città
+  useEffect(() => {
+    document.title =  formData.title ? `Stai aggiungendo ${formData.title}` : `React Visited Cities`;
+  },[formData]);
+
   const handleSubmit = (e) =>{
     //non permetto la ricarica della pagina al click del button submit
     e.preventDefault();
@@ -28,7 +33,16 @@ function CardForm({ addCity }) {
       description: formData.description,
       imgURL: formData.imgURL,
       isVisited: formData.isVisited,
-    }
+    };
+
+    //svuoto il form
+    setFormData({
+    title: "",
+    description: "",
+    imgURL: "",
+    isVisited: false,
+    });
+
     addCity(city);
   }
 

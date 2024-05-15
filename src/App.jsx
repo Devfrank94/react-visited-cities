@@ -9,13 +9,11 @@ import Select from './components/Select.jsx';
 
 function App() { 
 
-
   const addCity = (city) => {
     setCities([...cities, city])
   }
 
   // creo  un array di oggetti che rappresentano le città, ciascuna con i propri dati.
-
 const [cities, setCities] = useState([
   {
     id: 0,
