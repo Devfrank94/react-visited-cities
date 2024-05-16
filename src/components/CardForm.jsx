@@ -1,8 +1,11 @@
 /* eslint-disable react/prop-types */
 import { useState, useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { add } from '../redux/citiesSlice';
 
-function CardForm({ addCity }) {
+function CardForm() {
 
+  const dispatch = useDispatch();
   const [formData, setFormData] = useState({
     id: "",
     title: "",
@@ -43,7 +46,7 @@ function CardForm({ addCity }) {
     isVisited: false,
     });
 
-    addCity(city);
+    dispatch(add(city));
   }
 
   return (
