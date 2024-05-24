@@ -1,6 +1,6 @@
 // import { Fragment } from 'react'
 import { Disclosure, Menu } from '@headlessui/react'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Bars3Icon, BellIcon, MapPinIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import LinkNav from './LinkNav'
 
 // function classNames(...classes) {
@@ -30,11 +30,7 @@ export default function Navbar() {
               </div>
               <div className="flex items-center justify-center max-[640px]:flex-1 sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
-                  <img
-                    className="h-8 w-auto mr-10"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                    alt="Your Company"
-                  />
+                  <MapPinIcon className="h-8 w-auto mr-10 text-white"/>
                 </div>
               </div>
               <div className="hidden sm:flex flex-1 justify-center">
