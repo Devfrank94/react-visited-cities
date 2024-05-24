@@ -4,6 +4,8 @@
 ## Descrizione
 React Visited Cities è una web app responsive che permette di tener traccia nella sessione corrente (insieme alle città di esempio) le città visitate e non.
 
+Link web app: [Clicca qui](https://react-visited-cities.netlify.app/)
+
 ## Funzionalità
 - Aggiunta di una nuova città con url immagine, nome, descrizione e se visitata o meno.
 - Visualizzazione di tutte le città in home.
