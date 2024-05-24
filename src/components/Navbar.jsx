@@ -30,7 +30,7 @@ export default function Navbar() {
               </div>
               <div className="flex items-center justify-center max-[640px]:flex-1 sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
-                  <MapPinIcon className="h-8 w-auto mr-10 text-white"/>
+                  <MapPinIcon className="h-8 w-auto text-white"/>
                 </div>
               </div>
               <div className="hidden sm:flex flex-1 justify-center">
