@@ -29,13 +29,13 @@ function CardFocus() {
   return(
     <div className="flex mt-10 m-7">
       <Link to='/'>
-      <ArrowLeftCircleIcon className="max-[640px]:h-[8rem] sm:h-16 text-white mr-2 hover:scale-125 duration-500 cursor-pointer"/>
+      <ArrowLeftCircleIcon className="max-[640px]:h-[3rem] sm:h-16 text-white mr-2 hover:scale-125 duration-500 cursor-pointer"/>
       </Link>
-      <div className="card flex cursor-pointer mx-2 h-max text-center rounded-lg bg-zinc-900 shadow-2xl">
-        <img className="object-cover rounded w-2/3 " src={cities[0].imgURL} alt={cities[0].title}/>
-        <div className="p-4 h-64 overflow-scroll break-words hyphens-auto">
+      <div className="card min-[481px]:flex cursor-pointer mx-2 h-max text-center rounded-lg bg-zinc-900 shadow-2xl">
+        <img className="object-cover rounded min-[481px]:w-2/3 " src={cities[0].imgURL} alt={cities[0].title}/>
+        <div className="p-4 h-64 break-words hyphens-auto overflow-y-scroll">
           <h2 className="text-2xl text-white font-bold">{cities[0].title}</h2>
-          <p className="text-gray-400/75">{cities[0].description}</p>
+          <p className="text-gray-400/75 max-[480px]:my-2 xl:my-8">{cities[0].description}</p>
           <div className="flex justify-center my-5">
             <span>{visitedLabel}</span>
           </div>
