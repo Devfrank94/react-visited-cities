@@ -47,7 +47,7 @@ function CardForm() {
     });
 
     dispatch(add(city));
-  }
+  };
 
   return (
     <div className="pt-5 grid place-content-center">
