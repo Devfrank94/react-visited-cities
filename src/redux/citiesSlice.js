@@ -1,4 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit'
+import { toast } from 'react-toastify'
 
 export const citiesSlice = createSlice({
   name: 'cities',
@@ -65,6 +66,7 @@ export const citiesSlice = createSlice({
   reducers: {
     add: (state, action) => {
       state.value.push(action.payload)
+      toast.success('Operazione completata!');
     },
   },
 })
