@@ -61,12 +61,12 @@ function CardForm() {
           <label htmlFor="title" className="block text-sm font-medium leading-3 text-white after:content-['*'] after:ml-0.5 after:text-red-500">
             Città
           </label>
-            <input name="title" type="text" value={formData.title} onChange={handleInputChange} placeholder="Inserisci nome Città" className="block rounded-md px-3 py-2 text-center text-sm font-semibold required:outline-red-500 valid:outline-green-500 shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2" minLength={2} maxLength={15} required></input>
+            <input name="title" type="text" value={formData.title} onChange={handleInputChange} placeholder="Inserisci nome Città" className="block rounded-md px-3 py-2 text-center text-sm font-semibold required:outline-red-500 valid:outline-green-500 shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2" minLength={2} maxLength={25} required></input>
 
-          <label htmlFor="description" className="block text-sm font-medium leading-3 text-white after:content-['*'] after:ml-0.5 after:text-red-500">
+          <label htmlFor="description" className="block text-sm font-medium leading-3 text-white">
             Descrizione
           </label>
-            <textarea name="description" value={formData.description} onChange={handleInputChange} placeholder="Inserisci descrizione..." className="block rounded-md px-3 py-2 text-center min-h-3.5 text-sm font-semibold required:outline-red-500 valid:outline-green-500 shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2" minLength={20} maxLength={50} required></textarea>
+            <textarea name="description" value={formData.description} onChange={handleInputChange} placeholder="Inserisci descrizione..." className="block rounded-md px-3 py-2 text-center min-h-3.5 text-sm font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus:outline-indigo-500 shadow-sm" maxLength={150}></textarea>
 
           <label htmlFor="isVisited" className="block text-sm font-medium leading-3 text-white">
             Visitata?
