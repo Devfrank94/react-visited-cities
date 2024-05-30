@@ -11,6 +11,7 @@ Link web app: [Clicca qui](https://react-visited-cities.netlify.app/)
 - Visualizzazione di tutte le città in home.
 - Possibilità di filtrare in home città visitate e non.
 - Alcuni esempi di routes in navbar.
+- Possibilità di eliminare la città nella pagina di focus della card
 
 ## Tecnologie Utilizzate
 <div style= "display: flex;  justify-content: center; gap: 40px">
