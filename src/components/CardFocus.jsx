@@ -30,9 +30,9 @@ function CardFocus() {
       <Link to='/'>
       <ArrowLeftCircleIcon className="max-[640px]:h-[2rem] sm:h-12 text-white mr-2 hover:scale-125 duration-500 cursor-pointer"/>
       </Link>
-      <div className="card min-[640px]:flex mx-2 h-max text-center rounded-lg shadow-2xl">
-        <img className="object-cover bg-white min-w-60  max-h-[450px] rounded min-[640px]:w-2/3" src={cities[0].imgURL}/>
-        <div className="p-4 flex-1 bg-zinc-900 min-w-48 break-words hyphens-auto overflow-y-auto flex-col justify-items-center">
+      <div className="min-[640px]:flex mx-2 h-max text-center">
+        <img className="object-cover bg-white min-w-60 min-[640px]:rounded-s-lg shadow-2xl  max-h-[450px] min-[640px]:w-2/3" src={cities[0].imgURL}/>
+        <div className="p-4 flex-1 bg-zinc-900 min-w-48 min-[640px]:rounded-r-lg shadow-2xl break-words hyphens-auto overflow-y-auto flex-col justify-items-center">
           <h2 className="text-2xl text-white font-bold">{cities[0].title}</h2>
           <p className="text-gray-400/75 max-[480px]:my-2 xl:my-8">{cities[0].description}</p>
           <div className="flex justify-center my-5">
