@@ -13,17 +13,17 @@ function LinkNav() {
 
   return(
       <div className='my-2 gap-3 cursor-pointer sm:flex'>
-        <div className={selectedPage === '/' ? 'bg-gray-900 text-white rounded-md px-10 py-2 text-sm font-medium' : 'text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-10 py-2 text-sm font-medium'}>
-          <Link to="/">Home</Link>
+        <div className={selectedPage === '/' ? 'bg-gray-900 rounded-md py-2' : 'text-gray-300 hover:bg-gray-700 rounded-md py-2'}>
+          <Link className='px-10 rounded-md text-sm font-medium text-white' to="/">Home</Link>
         </div>
-        <div className={selectedPage === '/blog' ? 'bg-gray-900 text-white rounded-md px-10 py-2 text-sm font-medium' : 'text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-10 py-2 text-sm font-medium'}>
-          <Link to="/blog">Blog</Link>
+        <div className={selectedPage === '/blog' ? 'bg-gray-900 rounded-md py-2' : 'text-gray-300 hover:bg-gray-700 rounded-md py-2'}>
+          <Link className='px-10 rounded-md text-sm font-medium text-white' to="/blog">Blog</Link>
         </div>
-        <div className={selectedPage === '/cta' ? 'bg-gray-900 text-white rounded-md px-10 py-2 text-sm font-medium' : 'text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-10 py-2 text-sm font-medium'}>
-          <Link to="/cta">Cta</Link>
+        <div className={selectedPage === '/cta' ? 'bg-gray-900 rounded-md py-2' : 'text-gray-300 hover:bg-gray-700 rounded-md py-2'}>
+          <Link className='px-10 rounded-md text-sm font-medium text-white' to="/cta">Cta</Link>
         </div>
-        <div className={selectedPage === '/features' ? 'bg-gray-900 text-white rounded-md px-10 py-2 text-sm font-medium' : 'text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-10 py-2 text-sm font-medium'}>
-          <Link to="/features">Features</Link>
+        <div className={selectedPage === '/features' ? 'bg-gray-900 rounded-md py-2' : 'text-gray-300 hover:bg-gray-700 rounded-md py-2'}>
+          <Link className='px-10 rounded-md text-sm font-medium text-white' to="/features">Features</Link>
         </div>
       </div>
   )
