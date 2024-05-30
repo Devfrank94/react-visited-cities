@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+import { AdjustmentsHorizontalIcon } from "@heroicons/react/24/outline";
 
 function Select(props) {
 
@@ -12,6 +13,7 @@ function Select(props) {
       <div className="flex flex-col gap-3 w-80 my-5 p-5 bg-gray-700 rounded-md shadow-lg">
         <label htmlFor="search" className="block text-sm font-medium leading-3 text-white">
           Filtra
+          <AdjustmentsHorizontalIcon className="w-4 inline-flex ml-1 align-top"/>
         </label>
         <div>
           <select
