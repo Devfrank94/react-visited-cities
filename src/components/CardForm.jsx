@@ -57,6 +57,7 @@ function CardForm() {
             Immagine Card
           </label>
             <input name="imgURL" type="text" value={formData.imgURL} onChange={handleInputChange} placeholder="Inserisci URL immagine" className="block rounded-md px-3 py-2 text-center text-sm font-semibold  required:outline-red-500 valid:outline-green-500 shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2" minLength={10} required></input>
+            <a className="text-sky-400 text-xs text-center after:content-['_↗']" href="https://unsplash.com/it/s/foto/citt%C3%A0" target="_blank">Cerca link immagine</a>
 
           <label htmlFor="title" className="block text-sm font-medium leading-3 text-white after:content-['*'] after:ml-0.5 after:text-red-500">
             Città
