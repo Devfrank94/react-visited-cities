@@ -66,11 +66,16 @@ export const citiesSlice = createSlice({
   reducers: {
     add: (state, action) => {
       state.value.push(action.payload)
-      toast.success('Operazione completata!');
+      toast.success('Città aggiunta con successo!');
+    },
+    delete: (state, action) => {
+      const cityToDelete = action.payload;
+      state.value = state.value.filter((city) => city.id !== cityToDelete);
+      toast.success('Città eliminata con successo!');
     },
   },
 })
 
-export const { add } = citiesSlice.actions
+export const { add, delete: removeCity } = citiesSlice.actions
 
 export const citiesReducer = citiesSlice.reducer
